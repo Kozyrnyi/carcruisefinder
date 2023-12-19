@@ -3,13 +3,13 @@
  * View: Latest Past Event
  *
  * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/list/month-separator.php
+ * [your-theme]/tribe/events/v2/latest-past/event.php
  *
  * See more documentation about our views templating system.
  *
  * @link http://evnt.is/1aiy
  *
- * @version 5.0.0
+ * @version 5.1.0
  *
  * @var WP_Post            $event        The event post object with properties added by the `tribe_get_event` function.
  * @var \DateTimeInterface $request_date The request date object. This will be "today" if the user did not input any
@@ -19,18 +19,20 @@
  * @see tribe_get_event() For the format of the event object.
  */
 
-use Tribe\Events\Views\V2\Utils;
 
-
-if ( empty( $is_past ) && ! empty ( $request_date ) ) {
-    $should_have_month_separator = Utils\Separators::should_have_month( $this->get( 'events' ), $event, $request_date );
-} else {
-    $should_have_month_separator = Utils\Separators::should_have_month( $this->get( 'events' ), $event );
-}
-
+//use Tribe\Events\Views\V2\Utils;
+//
+//
+//if ( empty( $is_past ) && ! empty ( $request_date ) ) {
+//    $should_have_month_separator = Utils\Separators::should_have_month( $this->get( 'events' ), $event, $request_date );
+//} else {
+//    $should_have_month_separator = Utils\Separators::should_have_month( $this->get( 'events' ), $event );
+//}
+//
 //if ( ! $should_have_month_separator ) {
 //    return;
 //}
+
 
 /*
  * Depending on the request date we show the later date between the real event start date and the request date.
