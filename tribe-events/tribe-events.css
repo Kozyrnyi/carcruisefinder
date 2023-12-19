@@ -432,6 +432,16 @@ div.dropdown {
 }
 
 
+/*fix for latest-past template*/
+.tribe-events-l-container{
+    display: flex;
+    flex-direction: column;
+}
+.tribe-events-l-container .page-title.custom_order{
+    order: -1;
+}
+
+
 /*Responsive*/
 @media(min-width: 769px) and (max-width: 991px){
     .filter-with-regions-counties-cities #tribe-bar-views {
